@@ -29,7 +29,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Row type="flex" justify="center">
+      <Row justify="center">
         <Col md={12} sm={16} xs={24}>
           <Row>
 

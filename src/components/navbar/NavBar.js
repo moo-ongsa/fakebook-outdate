@@ -34,21 +34,21 @@ class NavBar extends Component {
     );
 
     return (
-      <Row style={{ height: '100%' }} type="flex" align="middle">
-        <Col span={4} style={{ height: '100%' }} type="flex" align="end">
+      <Row style={{ height: '100%' }} align="middle">
+        <Col span={4} style={{ height: '100%' }}>
           <Link to="/">
             <img src={logo} alt="Logo Fakebook" style={{ height: '5vh' }} />
           </Link>
         </Col>
         <Col span={20}>
-          <Row type="flex" justify="end">
-            <Col span={4} type="flex" align="end">
+          <Row justify="end">
+            <Col span={4}>
               <Avatar
                 src={this.props.user.profilePic}
               />
             </Col>
             <Dropdown overlay={menu}>
-              <Col span={6} type="flex" align="start">
+              <Col span={6}>
                 <Link to="/my-profile">
                   <Button type="link">{this.props.user.name}</Button>
                 </Link>
