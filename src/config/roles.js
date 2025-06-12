@@ -26,7 +26,7 @@ const components = {
   }
 };
 
-export default {
+const rolesConfig = {
   //role name as a key.
   admin: {
     routes: [...Object.values(components)],
@@ -45,4 +45,5 @@ export default {
       components.signup,
     ]
   }
-}
+};
+export default rolesConfig;
